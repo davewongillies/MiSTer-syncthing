@@ -1,7 +1,5 @@
 # MiSTer-syncthing
 
-![Syncthing logo](./.github/syncthing_logo.png){ width="128" height="128" style="display: block; margin: 0 auto" }
-
 A script for running [Syncthing](https://syncthing.net/) on your MiSTer.
 
 ## Prerequisites
