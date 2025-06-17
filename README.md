@@ -1,6 +1,6 @@
 # MiSTer-syncthing
 
-A script and menu system for running [Syncthing](https://syncthing.net/) on your MiSTer.
+A script for running [Syncthing](https://syncthing.net/) on your MiSTer.
 
 ## Prerequisites
 

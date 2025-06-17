@@ -27,7 +27,7 @@ install() {
 }
 
 start() {
-  ${SYNCTHING_PATH}/syncthing serve --logfile=/var/log/syncthing.log
+  ${SYNCTHING_PATH}/syncthing serve --logfile=/var/log/syncthing.log > /dev/null 2>&1 &
 }
 
 stop() {
