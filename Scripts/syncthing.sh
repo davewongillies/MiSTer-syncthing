@@ -27,20 +27,23 @@ install() {
 }
 
 start() {
+  echo Starting syncthing...
   ${SYNCTHING_PATH}/syncthing serve --logfile=/var/log/syncthing.log > /dev/null 2>&1 &
 }
 
 stop() {
+  echo Stopping syncthing...
   ${SYNCTHING_PATH}/syncthing cli operations shutdown
 }
 
 restart() {
+  echo Restart syncthing...
   ${SYNCTHING_PATH}/syncthing cli operations restart
 }
 
 main() {
   install
-  $1
+  "${1:-start}"
 }
 
 main "${@}"
