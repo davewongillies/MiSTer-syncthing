@@ -1,5 +1,9 @@
 # MiSTer-syncthing
 
+<p align="center">
+  <img width="128" height="128" src="./.github/syncthing_logo.png">
+</p>
+
 A script for running [Syncthing](https://syncthing.net/) on your MiSTer.
 
 ## Prerequisites
