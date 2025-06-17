@@ -14,7 +14,7 @@ install() {
       https://github.com/syncthing/syncthing/releases/download/v${SYNCTHING_VERSION}/syncthing-linux-arm-v${SYNCTHING_VERSION}.tar.gz
     tar xf /tmp/syncthing.tar.gz -C /tmp
     cp /tmp/syncthing-linux-arm-v${SYNCTHING_VERSION}/syncthing ${SYNCTHING_PATH}
-    STGUIADDRESS=0.0.0.0:8384 ${SYNCTHING_PATH}/syncthing generate
+    STGUIADDRESS=0.0.0.0:8384 ${SYNCTHING_PATH}/syncthing generate --no-default-folder
     rm /tmp/syncthing.tar.gz
   fi
   if ! grep -q "# davewongillies/syncthing" /media/fat/linux/user-startup.sh ; then
